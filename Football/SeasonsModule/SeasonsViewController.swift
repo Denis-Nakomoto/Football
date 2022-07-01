@@ -107,7 +107,6 @@ extension SeasonsViewController: SeasonsViewProtocol {
         dataSource?.apply(snapshot, animatingDifferences: true)
     }
     
-    
     func pushToStands(vc: UIViewController) {
         self.navigationController?.pushViewController(vc, animated: true)
     }

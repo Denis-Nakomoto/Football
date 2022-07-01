@@ -19,7 +19,6 @@ class StandsViewController: UIViewController {
         let collectionView = UICollectionView(frame: view.bounds, collectionViewLayout: createCompositionalLayout())
         collectionView.register(StandsCell.self, forCellWithReuseIdentifier: StandsCell.reuseId)
         collectionView.translatesAutoresizingMaskIntoConstraints = false
-        collectionView.delegate = self
         return collectionView
     }()
     
@@ -124,22 +123,13 @@ extension StandsViewController {
             case .mySection:
                 guard let item = collectionView.dequeueReusableCell(withReuseIdentifier: StandsCell.reuseId, for: indexPath) as? StandsCell
                 else { fatalError() }
+                print(self.stands?.standings)
                 if let stand = self.stands?.standings?[indexPath.row] {
                     item.configure(with: stand)
                 }
                 return item
             }
         })
-    }
-}
-
-//MARK: - Delegate
-extension StandsViewController: UICollectionViewDelegate {
-    
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        //        guard let stands = stands else { return }
-        //        let stand = stands.standings[indexPath.row]
-        //       presenter?.coordinateToSeasonView(with: league.id)
     }
 }
 
@@ -168,6 +158,7 @@ extension StandsViewController: UIPickerViewDataSource, UIPickerViewDelegate {
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         picker.isHidden = true
+        title = seasons?[row].displayName
         presenter?.fetchStands(endPoint: .leaguesStandings(presenter?.leagueId ?? ""))
     }
 }
