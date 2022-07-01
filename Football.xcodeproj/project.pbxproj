@@ -17,7 +17,6 @@
 		9259411C286DDA180006C62D /* LeaguesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9259411B286DDA180006C62D /* LeaguesPresenter.swift */; };
 		9259411E286DDAB80006C62D /* LeaguesProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9259411D286DDAB80006C62D /* LeaguesProtocols.swift */; };
 		92594120286DDBE70006C62D /* NetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9259411F286DDBE70006C62D /* NetworkingManager.swift */; };
-		92594123286DDE6D0006C62D /* DummyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92594122286DDE6D0006C62D /* DummyVC.swift */; };
 		92594125286DE7190006C62D /* LeaguesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92594124286DE7190006C62D /* LeaguesModel.swift */; };
 		92594128286DEA780006C62D /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92594127286DEA780006C62D /* UIView+Extension.swift */; };
 		9259412A286DEAD80006C62D /* LeagueViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92594129286DEAD80006C62D /* LeagueViewCell.swift */; };
@@ -51,7 +50,6 @@
 		9259411B286DDA180006C62D /* LeaguesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaguesPresenter.swift; sourceTree = "<group>"; };
 		9259411D286DDAB80006C62D /* LeaguesProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaguesProtocols.swift; sourceTree = "<group>"; };
 		9259411F286DDBE70006C62D /* NetworkingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingManager.swift; sourceTree = "<group>"; };
-		92594122286DDE6D0006C62D /* DummyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyVC.swift; sourceTree = "<group>"; };
 		92594124286DE7190006C62D /* LeaguesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaguesModel.swift; sourceTree = "<group>"; };
 		92594127286DEA780006C62D /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		92594129286DEAD80006C62D /* LeagueViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueViewCell.swift; sourceTree = "<group>"; };
@@ -102,7 +100,6 @@
 		925940FD286DCF5F0006C62D /* Football */ = {
 			isa = PBXGroup;
 			children = (
-				92594122286DDE6D0006C62D /* DummyVC.swift */,
 				9259412D286DF0530006C62D /* Extensions */,
 				92594126286DE72C0006C62D /* Models */,
 				9259411A286DD96D0006C62D /* App */,
@@ -290,7 +287,6 @@
 				9259414B286EBE140006C62D /* UILabel+Extension.swift in Sources */,
 				92594135286E7AB80006C62D /* ImageLoader.swift in Sources */,
 				92594143286EAB280006C62D /* StandsModel.swift in Sources */,
-				92594123286DDE6D0006C62D /* DummyVC.swift in Sources */,
 				92594118286DD95A0006C62D /* SeasonsViewController.swift in Sources */,
 				92594147286EAD990006C62D /* StanadsPresenter.swift in Sources */,
 				92594120286DDBE70006C62D /* NetworkingManager.swift in Sources */,

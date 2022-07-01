@@ -118,26 +118,3 @@ class SeasonViewCell: UICollectionViewCell {
 }
 
 
-import SwiftUI
-struct DummyViewPreviewProvider: PreviewProvider {
-    static var previews: some View {
-        if #available(iOS 15.0, *) {
-            ContainerView().edgesIgnoringSafeArea(.all).previewInterfaceOrientation(.portrait)
-        } else {
-            // Fallback on earlier versions
-        }
-        
-    }
-    
-    struct ContainerView: UIViewControllerRepresentable {
-        let viewController = DummyPreviewVC()
-        
-        func makeUIViewController(context: Context) -> DummyPreviewVC {
-            return viewController
-        }
-        
-        func updateUIViewController(_ uiViewController: UIViewControllerType, context: Context) {
-        }
-    }
-}
-
